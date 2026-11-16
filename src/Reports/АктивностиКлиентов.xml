@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Report uuid="ffc216a4-eaa4-53dc-bc84-10624a6f31ca"><InternalInfo><xr:GeneratedType name="ReportObject.АктивностиКлиентов" category="Object"><xr:TypeId>cf2ec19f-6265-51f4-8e56-02706d3565d1</xr:TypeId><xr:ValueId>d4d392ee-1438-5c1b-8640-0647187e5481</xr:ValueId></xr:GeneratedType><xr:GeneratedType name="ReportManager.АктивностиКлиентов" category="Manager"><xr:TypeId>d619f358-9fd1-5cbc-8f23-ae555c42b079</xr:TypeId><xr:ValueId>cf8579cf-524b-51ba-9382-13acc766ec18</xr:ValueId></xr:GeneratedType></InternalInfo>
+		<Properties><Name>АктивностиКлиентов</Name>			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активности клиентов</v8:content>
+				</v8:item>
+			</Synonym><Comment/><UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/><AuxiliaryForm/><MainDataCompositionSchema>Report.АктивностиКлиентов.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm/><AuxiliarySettingsForm/><DefaultVariantForm/><VariantsStorage/><SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents><ExtendedPresentation/><Explanation/>
+		</Properties><ChildObjects><Template>ОсновнаяСхемаКомпоновкиДанных</Template></ChildObjects>
+	</Report>
+</MetaDataObject>

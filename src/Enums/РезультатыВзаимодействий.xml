@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Enum uuid="174bdb9d-4944-59c6-9f34-04f5e698de5b"><InternalInfo><xr:GeneratedType name="EnumRef.РезультатыВзаимодействий" category="Ref"><xr:TypeId>3739708c-d283-5b33-9280-d88e77939992</xr:TypeId><xr:ValueId>ab0b017f-16cc-5d2e-80af-98613701167d</xr:ValueId></xr:GeneratedType><xr:GeneratedType name="EnumManager.РезультатыВзаимодействий" category="Manager"><xr:TypeId>487b3c00-87ad-59de-8d4b-4034d3b32703</xr:TypeId><xr:ValueId>31553e0c-c5cd-5963-8ed7-f72355e9c3ac</xr:ValueId></xr:GeneratedType><xr:GeneratedType name="EnumList.РезультатыВзаимодействий" category="List"><xr:TypeId>b7b3f01b-ff78-5c37-9e11-61586ee7ce85</xr:TypeId><xr:ValueId>71829bce-95f4-58d0-82f9-61edf7590219</xr:ValueId></xr:GeneratedType></InternalInfo>
+		<Properties><Name>РезультатыВзаимодействий</Name>			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты взаимодействий</v8:content>
+				</v8:item>
+			</Synonym><Comment/><UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/><QuickChoice>true</QuickChoice><ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/><DefaultChoiceForm/><AuxiliaryListForm/><AuxiliaryChoiceForm/>
+			<ListPresentation/><ExtendedListPresentation/><Explanation/><ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties><ChildObjects><EnumValue uuid="1cf9b7ec-f9ef-50fd-9a94-c9d4291560fe"><Properties><Name>НеОпределено</Name>					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не определено</v8:content>
+						</v8:item>
+					</Synonym><Comment/></Properties></EnumValue><EnumValue uuid="5b0e4c72-b95a-50e6-b536-dc9427d66ecc"><Properties><Name>Успешно</Name>					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешно</v8:content>
+						</v8:item>
+					</Synonym><Comment/></Properties></EnumValue><EnumValue uuid="5bbfb32e-c433-5b42-8407-a7c20abe6023"><Properties><Name>ТребуетсяПродолжение</Name>					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется продолжение</v8:content>
+						</v8:item>
+					</Synonym><Comment/></Properties></EnumValue><EnumValue uuid="874371a8-5588-5a7f-b443-ac6e19087f0b"><Properties><Name>Отказ</Name>					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ</v8:content>
+						</v8:item>
+					</Synonym><Comment/></Properties></EnumValue></ChildObjects>
+	</Enum>
+</MetaDataObject>
