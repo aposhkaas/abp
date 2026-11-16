@@ -7,6 +7,6 @@
 				</v8:item>
 			</Synonym><Comment/>
 		<IncludeHelpInContents>true</IncludeHelpInContents><IncludeInCommandInterface>true</IncludeInCommandInterface>
-		<UseOneCommand>false</UseOneCommand><Explanation/><Picture/><Content><xr:Item xsi:type="xr:MDObjectRef">Catalog.Клиенты</xr:Item><xr:Item xsi:type="xr:MDObjectRef">Catalog.КонтактныеЛица</xr:Item><xr:Item xsi:type="xr:MDObjectRef">Document.Взаимодействие</xr:Item></Content>
+		<UseOneCommand>false</UseOneCommand><Explanation/><Picture/><Content><xr:Item xsi:type="xr:MDObjectRef">Catalog.Клиенты</xr:Item><xr:Item xsi:type="xr:MDObjectRef">Catalog.КонтактныеЛица</xr:Item><xr:Item xsi:type="xr:MDObjectRef">Document.Взаимодействие</xr:Item><xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗапланироватьВзаимодействие</xr:Item></Content>
 	</Properties><ChildObjects/></Subsystem>
 </MetaDataObject>

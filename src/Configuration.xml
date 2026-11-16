@@ -20,6 +20,6 @@
 			<VendorInformationAddress/><ConfigurationInformationAddress/><DataLockControlMode>Managed</DataLockControlMode><ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>DontUse</ModalityUseMode><SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode><CompatibilityMode>Version8_3_21</CompatibilityMode><DefaultConstantsForm/>
-		</Properties><ChildObjects><Language>Русский</Language><Subsystem>Продажи</Subsystem><Subsystem>Маркетинг</Subsystem><Subsystem>Сервис</Subsystem><CommonModule>CRMСервер</CommonModule><Catalog>Клиенты</Catalog><Catalog>КонтактныеЛица</Catalog><Enum>ИсточникиПоявления</Enum><Enum>РолиКонтактныхЛиц</Enum><Enum>ВидыВзаимодействий</Enum><Enum>РезультатыВзаимодействий</Enum><Document>Взаимодействие</Document><Report>АктивностиКлиентов</Report></ChildObjects>
+		</Properties><ChildObjects><Language>Русский</Language><Subsystem>Продажи</Subsystem><Subsystem>Маркетинг</Subsystem><Subsystem>Сервис</Subsystem><CommonModule>CRMСервер</CommonModule><CommonCommand>ЗапланироватьВзаимодействие</CommonCommand><Catalog>Клиенты</Catalog><Catalog>КонтактныеЛица</Catalog><Enum>ИсточникиПоявления</Enum><Enum>РолиКонтактныхЛиц</Enum><Enum>ВидыВзаимодействий</Enum><Enum>РезультатыВзаимодействий</Enum><Document>Взаимодействие</Document><Report>АктивностиКлиентов</Report></ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -21,9 +21,13 @@ New-Item -ItemType Directory -Force -Path $buildPath | Out-Null
 
 function Invoke-1CDesigner {
     param([string[]]$Arguments)
-    & $PlatformPath DESIGNER /F $InfoBasePath @Arguments /DisableStartupMessages
-    if ($LASTEXITCODE -ne 0) {
-        throw "1C Designer failed with exit code $LASTEXITCODE"
+    $allArguments = @("DESIGNER", "/F", $InfoBasePath) + $Arguments + @("/DisableStartupMessages")
+    $quotedArguments = $allArguments | ForEach-Object {
+        if ($_ -match '\s') { '"' + ($_ -replace '"', '\"') + '"' } else { $_ }
+    }
+    $process = Start-Process -FilePath $PlatformPath -ArgumentList $quotedArguments -Wait -PassThru -WindowStyle Hidden
+    if ($process.ExitCode -ne 0) {
+        throw "1C Designer failed with exit code $($process.ExitCode)"
     }
 }
 
@@ -35,12 +39,19 @@ Invoke-1CDesigner @("/LoadConfigFromFiles", $sourcePath, "/Out", $loadLog)
 Invoke-1CDesigner @("/UpdateDBCfg", "/Out", $updateLog)
 Invoke-1CDesigner @("/CheckConfig", "-ConfigLogIntegrity", "-IncorrectReferences", "-ThinClient", "-Server", "-ExternalConnection", "/Out", $checkLog)
 
-$checkText = Get-Content -LiteralPath $checkLog -Raw -Encoding Default
-if ($checkText -notmatch "Ошибок не обнаружено") {
+$checkText = Get-Content -LiteralPath $checkLog -Raw -Encoding UTF8
+$successText = -join @(0x041E, 0x0448, 0x0438, 0x0431, 0x043E, 0x043A, 0x0020, 0x043D, 0x0435, 0x0020, 0x043E, 0x0431, 0x043D, 0x0430, 0x0440, 0x0443, 0x0436, 0x0435, 0x043D, 0x043E | ForEach-Object { [char]$_ })
+if ($checkText -notmatch [regex]::Escape($successText)) {
     throw "Configuration check failed. See $checkLog"
 }
 
-Invoke-1CDesigner @("/DumpCfg", (Join-Path $buildPath "CRM_Z1.cf"))
-Invoke-1CDesigner @("/DumpIB", (Join-Path $buildPath "CRM_Z1.dt"))
+$configurationFile = Join-Path $buildPath "CRM_Z1.cf"
+$databaseFile = Join-Path $buildPath "CRM_Z1.dt"
+Invoke-1CDesigner @("/DumpCfg", $configurationFile, "/Out", (Join-Path $buildPath "dump-cfg.log"))
+Invoke-1CDesigner @("/DumpIB", $databaseFile, "/Out", (Join-Path $buildPath "dump-ib.log"))
+
+if ((Get-Item -LiteralPath $configurationFile).Length -eq 0 -or (Get-Item -LiteralPath $databaseFile).Length -eq 0) {
+    throw "Build artifacts were not created correctly"
+}
 
 Write-Output "Build completed: $buildPath"
